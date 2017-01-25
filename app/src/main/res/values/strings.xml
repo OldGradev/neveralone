@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">NeverAlone</string>
     <string name="welcome">Benvenuto</string>
+    <string name="change_text">Cambia Testo</string>
+    <string name="change_text_hint">Inserisci testo</string>
 
 </resources>
