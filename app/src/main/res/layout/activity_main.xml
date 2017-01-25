@@ -10,12 +10,19 @@
         android:id="@+id/welcome_tv"
         android:text="@string/welcome"/>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/count_x"
+        android:text="@string/countx"/>
+
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:id="@+id/change_text_hint"
-        android:text="@string/change_text_hint"
+        android:hint="@string/change_text_hint"
         />
 
     <Button
@@ -25,5 +32,18 @@
         android:id="@+id/change_text_btn"
         android:text="@string/change_text"/>
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/change_page"
+        android:text="@string/change_page"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/delete"
+        android:text="@string/delete"/>
 
 </LinearLayout>
