@@ -14,55 +14,61 @@ import android.widget.TextView;
  */
 public class MainActivity extends AppCompatActivity {
 
-    TextView welcomeTv;
-    Button changeTextBtn;
-    EditText changeTextEdit;
-    TextView count;
-    Button changePage;
-    Activity activity=this;
-    Button delete;
 
-    int x=0;
+    EditText username;
+    EditText password;
+    Button login;
+    Button delete;
+    Activity activity=this;
+
+    String testo2;
     String testo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        welcomeTv = (TextView) findViewById(R.id.welcome_tv);
-        changeTextBtn = (Button) findViewById(R.id.change_text_btn);
-        changeTextEdit = (EditText) findViewById(R.id.change_text_hint);
-        count = (TextView) findViewById(R.id.count_x);
+        username = (EditText) findViewById(R.id.username);
+        password = (EditText) findViewById(R.id.password);
 
-        changePage = (Button) findViewById(R.id.change_page);
+
+        login = (Button) findViewById(R.id.login);
         delete = (Button) findViewById(R.id.delete);
 
-        changeTextBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                x++;
-                welcomeTv.setText(changeTextEdit.getText());
-                count.setText("" + x);
-            }
-        });
-
-        changePage.setOnClickListener(new View.OnClickListener() {
+        login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                testo = welcomeTv.getText().toString();
-                Intent intent = new Intent(activity,AssistenzaActivity.class);
-                intent.putExtra("testo", testo);
-                startActivity(intent);
+                testo = username.getText().toString();
+                testo2 = password.getText().toString();
+
+                //controllo db per le credenziali del login
+
+                Intent intent;
+
+                if((testo.toLowerCase()).equals("volontario") && ((testo2.equals("123")))){
+                    intent = new Intent(activity,VolontarioActivity.class);
+                    startActivity(intent);
+
+                }
+
+                if((testo.toLowerCase()).equals("mario") && ((testo2.equals("123")))) {
+                    intent = new Intent(activity,AssistenzaActivity.class);
+                    startActivity(intent);
+
+                }else{
+                    username.setText("");
+                    password.setText("");
+                }
             }
         });
 
         delete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                welcomeTv.setText("");
-                changeTextEdit.setText("");
-                count.setText("0");
+                username.setText("");
+                password.setText("");
             }
         });
     }

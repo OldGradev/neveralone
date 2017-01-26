@@ -1,10 +1,25 @@
 <resources>
     <string name="app_name">NALO</string>
-    <string name="welcome">Benvenuto</string>
-    <string name="change_text">Cambia Testo</string>
-    <string name="change_text_hint">Inserisci testo</string>
-    <string name="countx">0</string>
-    <string name="change_page">cambia pagina</string>
-    <string name="name_tv">ciao ciao</string>
+    <string name="login">Accedi</string>
     <string name="delete">Cancella Testo</string>
+
+    <string name="username">Inserisci username</string>
+    <string name="password">Inserisci password</string>
+
+    <string name="volontario">Pagina Volonatario</string>
+    <string name="implementare_vol">Vogliamo implementare quattro pagine a scorrimento (stile Facebook) che mostrino ognuna la lista di esigenza di quella determinata categoria</string>
+    <string name="dettagli">Dettagli</string>
+
+    <string name="disagiato">Pagina Disagiato</string>
+    <string name="assistenza">Assistenza</string>
+    <string name="malori">Malore</string>
+    <string name="medicinali">Medicinali</string>
+    <string name="spesa">Spesa</string>
+
+    <string name="messaggio">Messaggio</string>
+
+    <string name="disagio">Tipo di Disagio : </string>
+    <string name="nome_disagiato">Disagiato : </string>
+    <string name="posizione">Luogo : </string>
+
 </resources>

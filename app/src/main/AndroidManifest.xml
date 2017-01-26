@@ -9,7 +9,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <!--prima attivity-->
+        <!-- prima attivity -->
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,9 +18,11 @@
             </intent-filter>
         </activity>
 
-        <!--seconda attivity-->
-        <activity android:name=".AssistenzaActivity"></activity>
-
+        <!-- seconda attivity -->
+        <activity android:name=".AssistenzaActivity" />
+        <activity android:name=".VolontarioActivity" />
+        <activity android:name=".MessaggioActivity" />
+        <activity android:name=".DettagliActivity"></activity>
     </application>
 
 </manifest>

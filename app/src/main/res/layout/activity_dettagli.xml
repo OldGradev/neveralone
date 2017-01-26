@@ -3,34 +3,24 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <EditText
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:id="@+id/username"
-        android:hint="@string/username"
-        />
+        android:id="@+id/disagio"
+        android:text="@string/disagio"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/nome_disagiato"
+        android:text="@string/nome_disagiato"/>
 
-    <EditText
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:id="@+id/password"
-        android:hint="@string/password"
-        android:inputType="textPassword"/>
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:id="@+id/login"
-        android:text="@string/login"/>
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:id="@+id/delete"
-        android:text="@string/delete"/>
+        android:id="@+id/posizione"
+        android:text="@string/posizione"/>
 
 </LinearLayout>
