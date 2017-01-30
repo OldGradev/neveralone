@@ -22,7 +22,7 @@
         <activity android:name=".AssistenzaActivity" />
         <activity android:name=".VolontarioActivity" />
         <activity android:name=".MessaggioActivity" />
-        <activity android:name=".DettagliActivity"></activity>
+        <activity android:name=".DettagliActivity" />
     </application>
 
 </manifest>
