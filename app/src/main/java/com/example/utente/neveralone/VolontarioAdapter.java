@@ -12,7 +12,7 @@ import java.util.ArrayList;
 /**
  * Created by Utente on 27/01/2017.
  */
-public class VolontarioAdapter extends RecyclerView.Adapter<VolontarioAdapter.DisagioViewHolder> {
+public class Adapter extends RecyclerView.Adapter<VolontarioAdapter.DisagioViewHolder> {
 
     ArrayList<Disagio> dataSet = new ArrayList<>();
 
