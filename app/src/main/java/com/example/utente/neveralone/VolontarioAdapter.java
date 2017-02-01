@@ -12,7 +12,10 @@ import java.util.ArrayList;
 /**
  * Created by Utente on 27/01/2017.
  */
-public class Adapter extends RecyclerView.Adapter<VolontarioAdapter.DisagioViewHolder> {
+
+// DA IMPLEMENTARE CON LE FRAGMENT CHE UTILIZZANO LO SCROLL ORIZZONTALE
+
+public class VolontarioAdapter extends RecyclerView.Adapter<VolontarioAdapter.DisagioViewHolder> {
 
     ArrayList<Disagio> dataSet = new ArrayList<>();
 

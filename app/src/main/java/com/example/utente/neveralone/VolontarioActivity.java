@@ -81,13 +81,13 @@ public class VolontarioActivity extends AppCompatActivity {
         public android.support.v4.app.Fragment getItem(int position) {
             switch (position) {
                 case 0: // Fragment # 0 - This will show FirstFragment
-                    return MaloreFragment.newInstance(0, "Page # 1");
+                    return MaloreFragment.newInstance(0, "Malore");
                 case 1: // Fragment # 0 - This will show FirstFragment different title
-                    return MedicineFragment.newInstance(1, "Page # 2");
+                    return MedicineFragment.newInstance(1, "Medicine");
                 case 2: // Fragment # 1 - This will show SecondFragment
-                    return SpesaFragment.newInstance(2, "Page # 3");
+                    return SpesaFragment.newInstance(2, "Spesa");
                 case 3: // Fragment # 1 - This will show SecondFragment
-                    return CompagniaFragment.newInstance(3, "Page # 4");
+                    return CompagniaFragment.newInstance(3, "Compagnia");
                 default:
                     return null;
             }
@@ -97,6 +97,7 @@ public class VolontarioActivity extends AppCompatActivity {
         @Override
         public CharSequence getPageTitle(int position) {
             return "Page " + position;
+            //Inserire il nome dell pagina dove ci si trova
         }
 
     }
