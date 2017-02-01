@@ -1,40 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/bcklogin">
 
     <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_width="280dp"
+        android:layout_height="70dp"
+
+        android:background="@drawable/bckusr"
+        android:maxLength="20"
+
+        android:textColor="@color/colorText"
+        android:textColorHint="@color/colorText"
+
+        android:fontFamily="sans_serif"
         android:layout_gravity="center"
+        android:textAlignment="center"
+
         android:id="@+id/username"
         android:hint="@string/username"
         />
 
     <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_width="280dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="20dp"
+
+        android:background="@drawable/bckpsw"
+        android:maxLength="20"
+
+        android:textColor="@color/colorText"
+        android:textColorHint="@color/colorText"
+
+        android:fontFamily="sans_serif"
         android:layout_gravity="center"
+        android:textAlignment="center"
+
         android:id="@+id/password"
         android:hint="@string/password"
         android:inputType="textPassword"/>
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
         android:layout_gravity="center"
-        android:background="#2196f3"
-        android:textColor="#FFFFFF"
-        android:id="@+id/login"
-        android:text="@string/login"/>
 
-    <Button
+        android:background="@drawable/btnaccedi"
+        android:fontFamily="sans_serif"
+
+        android:id="@+id/login"/>
+
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+
         android:layout_gravity="center"
-        android:background="#2196f3"
-        android:textColor="#FFFFFF"
-        android:id="@+id/delete"
-        android:text="@string/delete"/>
+        android:layout_marginTop="20dp"
+        android:onClick="handleOnClick"
+        android:clickable="true"
+
+        android:textColor="@color/colorText"
+        android:id="@+id/pswdimenticata"
+        android:text="@string/pswdimenticata"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center"
+        android:layout_marginTop="110dp"
+        android:onClick="handleOnClick"
+        android:clickable="true"
+
+        android:textColor="@color/colorText"
+        android:id="@+id/register"
+        android:text="@string/register"/>
 
 </LinearLayout>

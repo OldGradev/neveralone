@@ -60,7 +60,7 @@ public class VolontarioAdapter extends RecyclerView.Adapter<VolontarioAdapter.Di
 
                 @Override
                 public void onClick(View v) {
-                    Toast.makeText(v.getContext(), "Nome studente : " + dataSet.get(getAdapterPosition()).getSpecifiche(), Toast.LENGTH_LONG).show();
+                    Toast.makeText(v.getContext(), "Dettagli Disagio : " + dataSet.get(getAdapterPosition()).getSpecifiche(), Toast.LENGTH_LONG).show();
                 }
             });
         }

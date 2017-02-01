@@ -4,21 +4,32 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:textSize="22sp"
+        android:textStyle="bold"
+
+        android:background="@color/colorSfondoLista"
         android:layout_gravity="center"
-        android:id="@+id/disagio"/>
+        android:id="@+id/disagio"/><!--android:background="@color/colorSfondoLista"-->
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:textSize="18sp"
+
+        android:background="@color/colorSfondoLista"
         android:layout_gravity="center"
-        android:id="@+id/nome_disagiato"/>
+        android:id="@+id/nome_disagiato"/><!--android:background="@color/colorSfondoLista"-->
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:textSize="18sp"
+
+        android:background="@color/colorSfondoLista"
         android:layout_gravity="center"
-        android:id="@+id/posizione"/>
+        android:id="@+id/posizione"
+        android:layout_marginBottom="20dp"/><!--android:background="@color/colorSfondoLista"-->
 
 </LinearLayout>

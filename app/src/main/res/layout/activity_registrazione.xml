@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/tipo_utenti"/>
+
+        <EditText
+            android:layout_width="280dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+
+            android:background="@drawable/bckusr"
+            android:maxLength="20"
+
+            android:id="@+id/name"/>
+
+        <EditText
+            android:layout_width="280dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+
+            android:background="@drawable/bckusr"
+            android:maxLength="20"
+
+            android:id="@+id/cognome"/>
+
+        <EditText
+            android:layout_width="280dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+
+            android:background="@drawable/bckusr"
+            android:maxLength="20"
+
+            android:id="@+id/qualifica"/>
+
+        <DatePicker
+            android:layout_width="280dp"
+            android:layout_height="350dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/data_di_nascita"/>
+
+
+        <EditText
+            android:layout_width="280dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+
+            android:background="@drawable/bckusr"
+            android:maxLength="20"
+
+            android:id="@+id/indirizzo"/>
+
+        <EditText
+            android:layout_width="280dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+
+            android:background="@drawable/bckusr"
+            android:maxLength="20"
+
+            android:id="@+id/email"/>
+
+        <EditText
+            android:layout_width="280dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+
+            android:background="@drawable/bckusr"
+            android:maxLength="20"
+
+            android:id="@+id/username"/>
+
+        <EditText
+            android:layout_width="280dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+
+            android:background="@drawable/bckusr"
+            android:maxLength="20"
+
+            android:id="@+id/password"/>
+
+
+    </LinearLayout>
+
+</ScrollView>
