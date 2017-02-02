@@ -3,6 +3,7 @@ package layout;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -55,6 +56,16 @@ public class SpesaFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_spesa, container, false);
         TextView tvLabel = (TextView) view.findViewById(R.id.titolo1);
         tvLabel.setText(page + " -- " + title);
+
+        disagioRV = (RecyclerView)view.findViewById(R.id.recycler_view);
+
+        layoutManager = new LinearLayoutManager(getContext());
+        adapter = new VolontarioAdapter();
+
+        disagioRV.setLayoutManager(layoutManager);
+        disagioRV.setAdapter(adapter);
+        fetchDisagi();
+
         return view;
     }
 
@@ -72,11 +83,7 @@ public class SpesaFragment extends Fragment {
 
         disagii.add(d1);
         disagii.add(d2);
-        disagii.add(d3);
-        disagii.add(d4);
-        disagii.add(d5);
-        disagii.add(d6);
-        disagii.add(d7);
+
 
         adapter.setDataSet(disagii);
 

@@ -3,6 +3,7 @@ package layout;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -31,6 +32,7 @@ public class CompagniaFragment extends Fragment {
         // Required empty public constructor
     }
 
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
 
@@ -55,6 +57,17 @@ public class CompagniaFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_compagnia, container, false);
         TextView tvLabel = (TextView) view.findViewById(R.id.titolo1);
         tvLabel.setText(page + " -- " + title);
+
+
+        disagioRV = (RecyclerView) view.findViewById(R.id.recycler_view);
+
+        layoutManager = new LinearLayoutManager(getContext());
+        adapter = new VolontarioAdapter();
+
+        disagioRV.setLayoutManager(layoutManager);
+        disagioRV.setAdapter(adapter);
+        fetchDisagi();
+
         return view;
     }
 
