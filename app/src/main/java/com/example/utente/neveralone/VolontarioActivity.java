@@ -1,13 +1,9 @@
 package com.example.utente.neveralone;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.RecyclerView;
-
-import java.util.ArrayList;
 
 import layout.CompagniaFragment;
 import layout.MaloreFragment;
@@ -16,11 +12,6 @@ import layout.SpesaFragment;
 
 public class VolontarioActivity extends AppCompatActivity {
 
-    Intent intent;
-
-    RecyclerView disagioRV;
-    RecyclerView.LayoutManager layoutManager;
-    VolontarioAdapter adapter;
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
      * See https://g.co/AppIndexing/AndroidStudio for more information.
@@ -39,30 +30,6 @@ public class VolontarioActivity extends AppCompatActivity {
 
     }
 
-    private void fetchDisagi() {
-
-        ArrayList<Disagio> disagii = new ArrayList<>();
-
-        Disagio d1 = new Disagio("ho un malore al cuore", "via carlo ", "malore Cuore", "Mario Rossi");
-        Disagio d2 = new Disagio("ho un malore alla testa", "via carlo martino", "malore Testa", "Maria Gialli");
-        Disagio d3 = new Disagio("ho bisogno di compagnia", "via  martino", "Compagnia", "Carmelo Giorgio");
-        Disagio d4 = new Disagio("ho bisogno di compagnia", "via  martino", "Compagnia", "Carmelo Giorgio");
-        Disagio d5 = new Disagio("ho bisogno di compagnia", "via  martino", "Compagnia", "Carmelo Giorgio");
-        Disagio d6 = new Disagio("ho bisogno di compagnia", "via  martino", "Compagnia", "Carmelo Giorgio");
-        Disagio d7 = new Disagio("ho bisogno di compagnia", "via  martino", "Compagnia", "Carmelo Giorgio");
-
-        disagii.add(d1);
-        disagii.add(d2);
-        disagii.add(d3);
-        disagii.add(d4);
-        disagii.add(d5);
-        disagii.add(d6);
-        disagii.add(d7);
-
-        adapter.setDataSet(disagii);
-
-    }
-
     public static class MyPagerAdapter extends FragmentPagerAdapter {
         private static int NUM_ITEMS = 4;
 
@@ -73,20 +40,21 @@ public class VolontarioActivity extends AppCompatActivity {
         // Returns total number of pages
         @Override
         public int getCount() {
-            return 4;
+            return NUM_ITEMS;
         }
 
         // Returns the fragment to display for that page
         @Override
         public android.support.v4.app.Fragment getItem(int position) {
+
             switch (position) {
-                case 0: // Fragment # 0 - This will show FirstFragment
+                case 0:
                     return MaloreFragment.newInstance(0, "Malore");
-                case 1: // Fragment # 0 - This will show FirstFragment different title
+                case 1:
                     return MedicineFragment.newInstance(1, "Medicine");
-                case 2: // Fragment # 1 - This will show SecondFragment
+                case 2:
                     return SpesaFragment.newInstance(2, "Spesa");
-                case 3: // Fragment # 1 - This will show SecondFragment
+                case 3:
                     return CompagniaFragment.newInstance(3, "Compagnia");
                 default:
                     return null;
@@ -96,8 +64,19 @@ public class VolontarioActivity extends AppCompatActivity {
         // Returns the page title for the top indicator
         @Override
         public CharSequence getPageTitle(int position) {
-            return "Page " + position;
-            //Inserire il nome dell pagina dove ci si trova
+
+            switch (position) {
+                case 0:
+                    return "Malori";
+                case 1:
+                    return "Medicine";
+                case 2:
+                    return "Spesa";
+                case 3:
+                    return "Compagnia";
+                default:
+                    return null;
+            }
         }
 
     }
