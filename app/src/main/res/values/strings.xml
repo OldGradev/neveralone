@@ -7,7 +7,6 @@
     <string name="password">password</string>
 
     <string name="volontario">Pagina Volonatario</string>
-    <string name="implementare_vol">Vogliamo implementare quattro pagine a scorrimento (stile Facebook) che mostrino ognuna la lista di esigenza di quella determinata categoria</string>
     <string name="dettagli">Dettagli</string>
 
     <string name="disagiato">Pagina Disagiato</string>
@@ -26,5 +25,11 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
     <!-- scrivere le stringhe delle edit text della pagina registrazine -->
+
+    <string name="nome">nome</string>
+    <string name="cognome">cognome</string>
+    <string name="indirizzo">indirizzo</string>
+    <string name="qualifica">qualifica</string>
+    <string name="email">e-mail</string>
 
 </resources>

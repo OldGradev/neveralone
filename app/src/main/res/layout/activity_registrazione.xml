@@ -1,20 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <ScrollView
-android:layout_width="fill_parent"
-android:layout_height="fill_parent"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
 xmlns:android="http://schemas.android.com/apk/res/android">
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@drawable/bckpage">
 
 
         <Spinner
+            android:layout_marginTop="20dp"
             android:id="@+id/spinner"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:textColor="@color/colorText"
+            android:textColorHint="@color/colorText"
+            android:fontFamily="sans_serif"
+
+            android:layout_width="280dp"
+            android:layout_height="70dp"
             android:entries="@array/tipo_utenti"/>
 
         <EditText
@@ -22,10 +30,15 @@ xmlns:android="http://schemas.android.com/apk/res/android">
             android:layout_height="70dp"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
+            android:textAlignment="center"
 
             android:background="@drawable/bckusr"
             android:maxLength="20"
+            android:textColor="@color/colorText"
+            android:textColorHint="@color/colorText"
+            android:fontFamily="sans_serif"
 
+            android:hint="@string/nome"
             android:id="@+id/name"/>
 
         <EditText
@@ -33,10 +46,16 @@ xmlns:android="http://schemas.android.com/apk/res/android">
             android:layout_height="70dp"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
+            android:textAlignment="center"
 
             android:background="@drawable/bckusr"
             android:maxLength="20"
 
+            android:textColor="@color/colorText"
+            android:textColorHint="@color/colorText"
+            android:fontFamily="sans_serif"
+
+            android:hint="@string/cognome"
             android:id="@+id/cognome"/>
 
         <EditText
@@ -44,28 +63,14 @@ xmlns:android="http://schemas.android.com/apk/res/android">
             android:layout_height="70dp"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
+            android:textAlignment="center"
 
             android:background="@drawable/bckusr"
-            android:maxLength="20"
+            android:textColor="@color/colorText"
+            android:textColorHint="@color/colorText"
+            android:fontFamily="sans_serif"
 
-            android:id="@+id/qualifica"/>
-
-        <DatePicker
-            android:layout_width="280dp"
-            android:layout_height="350dp"
-            android:layout_marginTop="20dp"
-            android:id="@+id/data_di_nascita"/>
-
-
-        <EditText
-            android:layout_width="280dp"
-            android:layout_height="70dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-
-            android:background="@drawable/bckusr"
-            android:maxLength="20"
-
+            android:hint="@string/indirizzo"
             android:id="@+id/indirizzo"/>
 
         <EditText
@@ -73,10 +78,38 @@ xmlns:android="http://schemas.android.com/apk/res/android">
             android:layout_height="70dp"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
+            android:textAlignment="center"
 
             android:background="@drawable/bckusr"
             android:maxLength="20"
+            android:textColor="@color/colorText"
+            android:textColorHint="@color/colorText"
+            android:fontFamily="sans_serif"
 
+            android:hint="@string/qualifica"
+            android:id="@+id/qualifica"/>
+
+        <!--<DatePicker
+            android:layout_width="280dp"
+            android:layout_height="350dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:id="@+id/data_di_nascita"/>-->
+
+        <EditText
+            android:layout_width="280dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+
+            android:background="@drawable/bckusr"
+            android:maxLength="20"
+            android:textColor="@color/colorText"
+            android:textColorHint="@color/colorText"
+            android:fontFamily="sans_serif"
+
+            android:hint="@string/email"
             android:id="@+id/email"/>
 
         <EditText
@@ -84,10 +117,15 @@ xmlns:android="http://schemas.android.com/apk/res/android">
             android:layout_height="70dp"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
+            android:textAlignment="center"
 
             android:background="@drawable/bckusr"
             android:maxLength="20"
+            android:textColor="@color/colorText"
+            android:textColorHint="@color/colorText"
+            android:fontFamily="sans_serif"
 
+            android:hint="@string/username"
             android:id="@+id/username"/>
 
         <EditText
@@ -95,11 +133,29 @@ xmlns:android="http://schemas.android.com/apk/res/android">
             android:layout_height="70dp"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
+            android:textAlignment="center"
 
             android:background="@drawable/bckusr"
             android:maxLength="20"
+            android:textColor="@color/colorText"
+            android:textColorHint="@color/colorText"
+            android:fontFamily="sans_serif"
 
+            android:hint="@string/password"
             android:id="@+id/password"/>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+
+            android:layout_marginBottom="10dp"
+
+            android:background="@drawable/btnaccedi"
+            android:fontFamily="sans_serif"
+
+            android:id="@+id/login"/>
 
 
     </LinearLayout>
